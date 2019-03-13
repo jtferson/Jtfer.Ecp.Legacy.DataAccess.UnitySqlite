@@ -73,7 +73,16 @@ namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
 
         public override IEnumerable<Type> GetMappedTypes()
         {
-           
+#if DEBUG
+            if (_instance == null)
+            {
+                throw new Exception("Sqlite instance is null");
+            }
+            if (_instance.TableMappings.Count() == 0)
+            {
+                throw new Exception("TableMapping of Sqlite instance is empty");
+            }
+#endif
             return _instance.TableMappings.Select(q => q.MappedType);
         }
 
