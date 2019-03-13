@@ -1,0 +1,15 @@
+{
+    "name": "Jtfer.Ecp.Legacy.DataAccess.UnitySqlite",
+    "references": [
+        "Jtfer.Ecp",
+        "Jtfer.Ecp.Legacy.DataAccess"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

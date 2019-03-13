@@ -1,0 +1,19 @@
+{
+  "name": "com.jtfer.ecp.legacy.dataaccess.unitysqlite",
+  "author": "Jtferson",
+  "displayName": "ECP Legacy Unity Sqlite",
+  "description": "Legacy Unity Sqlite project with support primary key as 'int' type",
+  "unity": "2018.3",
+  "version": "2019.3.12",
+  "keywords": [
+    "ecp",
+    "pipeline",
+    "unity",
+    "sqlite"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtferson/Jtfer.Ecp.Legacy.DataAccess.UnitySqlite"
+  }
+}
