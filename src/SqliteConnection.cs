@@ -73,12 +73,13 @@ namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
 
         public override IEnumerable<Type> GetMappedTypes()
         {
+           
             return _instance.TableMappings.Select(q => q.MappedType);
         }
 
         public override void MapEntityToTable<T>()
         {
-            
+            _instance.CreateTable<T>();
         }
 
         public override void RunInTransaction(Action transaction)
