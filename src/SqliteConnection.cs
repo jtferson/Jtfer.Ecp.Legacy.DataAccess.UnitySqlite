@@ -10,9 +10,8 @@ using UnityEngine;
 
 namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
 {
-    public class SqliteConnection : DbConnectionBaseLegacy
+    public abstract class SqliteConnection : DbConnectionBaseLegacy
     {
-        protected override string DatabaseName => throw new NotImplementedException();
         SQLiteConnection _instance;
 
         public override IEnumerable<T> Get<T>()
