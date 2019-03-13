@@ -90,7 +90,7 @@ namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
         protected override string GetDbPath(string dbVersion)
         {
 #if UNITY_EDITOR
-            var dbPath = string.Format(@"Assets/StreamingAssets/{0}", DatabaseName);
+            var dbPath = string.Format(@"Assets/Client/StreamingAssets/{0}", DatabaseName);
 #else
             var dbWithVersion = DatabaseName + "_" + dbVersion;
             // check if file exists in Application.persistentDataPath
@@ -128,7 +128,7 @@ namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
 		// then save to Application.persistentDataPath
 		File.Copy(loadDb, filepath, true);
 #else
-	var loadDb = Application.dataPath + "/StreamingAssets/" + DatabaseName;  // this is the path to your StreamingAssets in iOS
+	var loadDb = Application.dataPath + "Client/StreamingAssets/" + DatabaseName;  // this is the path to your StreamingAssets in iOS
 	// then save to Application.persistentDataPath
 	File.Copy(loadDb, filepath, true);
 
