@@ -101,7 +101,7 @@ namespace Jtfer.Ecp.Legacy.DataAccess.UnitySqlite
         protected override string GetDbPath(string dbVersion)
         {
 #if UNITY_EDITOR
-            var dbPath = string.Format(@"Assets/Client/StreamingAssets/{0}.{1}", DatabaseName, FileFormat);
+            var dbPath = string.Format(@"Assets/StreamingAssets/{0}.{1}", DatabaseName, FileFormat);
 #else
             var dbWithVersion = DatabaseName + "_" + dbVersion + "." + FileFormat;
             // check if file exists in Application.persistentDataPath
